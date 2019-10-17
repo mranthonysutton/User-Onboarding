@@ -1,0 +1,16 @@
+.container {
+  width: 40%;
+  border: 1px solid slategrey;
+  margin: 3% auto;
+  padding: 3%;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 1% 0;
+  padding: 1%;
+}
