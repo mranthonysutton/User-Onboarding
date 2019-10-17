@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { withFormik, Form } from "formik";
 import * as Yup from "yup";
 import "./FormComponent.css";
@@ -22,9 +23,10 @@ const FormComponent = ({ values, touched, errors }) => {
         )}
 
         <label>
-          <input type="checkbox" name="terms"></input>I agree to the terms and
-          conditions
+          <input type="checkbox" name="terms" checked={values.terms}></input>I
+          agree to the terms and conditions
         </label>
+
         {touched.terms && errors.terms && (
           <p className="error">You must agree to the terms and conditions</p>
         )}
