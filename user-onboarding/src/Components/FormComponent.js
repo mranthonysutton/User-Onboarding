@@ -6,6 +6,7 @@ import "./FormComponent.css";
 const FormComponent = ({ values, touched, errors }) => {
   return (
     <div className="container">
+      <h1>Add A User</h1>
       <Form className="form-control">
         <input type="text" name="name" placeholder="Full Name" />
         {touched.name && errors.name && <p className="error">{errors.name}</p>}
