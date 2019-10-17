@@ -1,5 +1,6 @@
 import React from "react";
 import { withFormik, Form } from "formik";
+import * as Yup from "yup";
 import "./FormComponent.css";
 
 const FormComponent = ({ values }) => {
